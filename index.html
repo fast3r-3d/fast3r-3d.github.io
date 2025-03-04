@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <meta name="description"
+      content="Fast3R - Towards 3D Reconstruction of 1000+ Images in One Forward Pass">
+    <meta property="og:title"
+      content="Fast3R - 3D Reconstruction of 1000+ Images in One Forward Pass" />
+    <meta property="og:description"
+      content="A novel approach for efficient 3D reconstruction of large image collections in a single forward pass" />
+    <meta property="og:url" content="https://fast3r-3d.github.io/" />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/image/teaser.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:title"
+      content="Fast3R - 3D Reconstruction of 1000+ Images">
+    <meta name="twitter:description"
+      content="A novel approach for efficient 3D reconstruction of large image collections in a single forward pass">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="static/images/teaser.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords"
+      content="Fast3R, 3D Reconstruction, Neural Rendering, Computer Vision, Deep Learning">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Fast3R - Towards 3D Reconstruction of 1000+ Images in One Forward
+      Pass</title>
+    <!-- Lightning emoji favicon -->
+    <link rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡️</text></svg>">
+    <link
+      href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+  </head>
+  <body>
+
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">⚡️Fast3R - Towards 3D
+                Reconstruction of 1000+ Images in One Forward Pass</h1>
+              <div class="is-size-5 publication-authors">
+                <!-- Paper authors -->
+                <span class="author-block">
+                  <a href="https://jedyang.com/" target="_blank">Jianing
+                    Yang</a><sup>1,2</sup>,</span>
+                <span class="author-block">
+                  <a href="https://alexsax.github.io/" target="_blank">Alexander
+                    Sax</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="https://kevinjliang.github.io/" target="_blank">Kevin
+                    J. Liang</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="https://www.mikaelhenaff.net/" target="_blank">Mikael
+                    Henaff</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="https://tanghaotommy.github.io/" target="_blank">Hao
+                    Tang</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="https://caoang327.github.io/" target="_blank">Ang
+                    Cao</a><sup>1,2</sup>,</span>
+                <span class="author-block">
+                  <a href="https://web.eecs.umich.edu/~chaijy/"
+                    target="_blank">Joyce Chai</a><sup>2</sup>,
+                </span>
+                <br>
+                <span class="author-block">
+                  <a href="https://fmeier.github.io/" target="_blank">Franziska
+                    Meier</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="https://www.linkedin.com/in/matt-feiszli-76b34b/"
+                    target="_blank">Matt Feiszli</a><sup>1</sup>
+                </span>
+              </div>
+
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><sup>1</sup>Meta FAIR &nbsp;&nbsp;
+                  <sup>2</sup>University of Michigan</span>
+              </div>
+              <br>
+              <div class="columns is-centered" style="margin-bottom: 0em">
+                <div class="column is-max-desktop has-text-centered">
+                  <h1 class="title is-4 publication-title"
+                    style="margin-bottom:0rem">
+                    <strong>CVPR 2025</strong>
+                  </h1>
+                </div>
+              </div>
+
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- ArXiv abstract Link -->
+                  <span class="link-block">
+                    <a href="https://arxiv.org/abs/2501.13928" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <img src="https://info.arxiv.org/assets/favicon.png"
+                          alt="arXiv" width="16" height="16">
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/facebookresearch/fast3r"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+
+                  <!-- Hugging Face model with actual logo -->
+                  <span class="link-block">
+                    <a
+                      href="https://huggingface.co/jedyang97/Fast3R_ViT_Large_512/"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <img
+                          src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
+                          alt="Hugging Face" width="18" height="18">
+                      </span>
+                      <span>Model</span>
+                    </a>
+                  </span>
+
+                  <!-- Demo link with Gradio icon -->
+                  <span class="link-block">
+                    <a href="https://fast3r.ngrok.app/" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <img src="https://www.gradio.app/favicon.png"
+                          alt="Gradio" width="16" height="16">
+                      </span>
+                      <span>Demo</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teaser video-->
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <img src="static/images/teaser.png" alt="Fast3R Teaser Image"
+            width="100%">
+          <h2 class="subtitle has-text-centered">
+            <strong>TL;DR:</strong> Fast3R enables 3D reconstruction of very
+            large image
+            collections in a single forward pass, dramatically improving
+            efficiency while
+            maintaining high-quality results.
+          </h2>
+        </div>
+      </div>
+    </section>
+    <!-- End teaser video -->
+
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Multi-view 3D reconstruction remains a core challenge in
+                computer vision, particularly in applications requiring accurate
+                and scalable representations across diverse perspectives.
+                Current leading methods such as DUSt3R employ a fundamentally
+                pairwise approach, processing images in pairs and necessitating
+                costly global alignment procedures to reconstruct from multiple
+                views. In this work, we propose <strong>Fast</strong>
+                <strong>3</strong>D
+                <strong>R</strong>econstruction (<strong>Fast3R</strong>),
+                a novel multi-view generalization to DUSt3R that achieves
+                efficient and scalable 3D reconstruction by processing many
+                views in parallel. Fast3R's Transformer-based architecture
+                forwards N images in a single forward pass, bypassing the need
+                for iterative alignment. Through extensive experiments on camera
+                pose estimation and 3D reconstruction, Fast3R demonstrates
+                state-of-the-art performance, with significant improvements in
+                inference speed and reduced error accumulation. These results
+                establish Fast3R as a robust alternative for multi-view
+                applications, offering enhanced scalability without compromising
+                reconstruction accuracy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End paper abstract -->
+
+    <!-- Fast3R Demo Section -->
+    <section class="hero is-small is-light">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title is-3">Fast3R Demo</h2>
+          <div class="content has-text-centered">
+            <p class="subtitle">
+              Our interactive Gradio demo allows you to upload images or videos
+              and visualize the 3D reconstruction in real-time.
+            </p>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-10">
+              <div class="box">
+                <h3 class="subtitle has-text-centered">Upload a video or images
+                  for instant 3D reconstruction</h3>
+                <img src="static/images/fast3r_demo_upload.gif"
+                  alt="Demo GIF: Upload a video" style="width: 100%;" />
+              </div>
+            </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-10">
+              <div class="box">
+                <h3 class="subtitle has-text-centered">Visualize and interact
+                  with the 3D reconstruction</h3>
+                <img src="static/images/fast3r_demo_control.gif"
+                  alt="Demo GIF: Visualize the 3D Reconstruction"
+                  style="width: 100%;" />
+              </div>
+            </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-10">
+              <div class="box">
+                <h3 class="subtitle has-text-centered">Visualize confidence
+                  heatmaps, explore frame by frame, and render GIFs</h3>
+                <img src="static/images/fast3r_demo_coloring.gif"
+                  alt="Demo GIF: Advanced visualization options"
+                  style="width: 100%;" />
+              </div>
+            </div>
+          </div>
+
+          <div class="content has-text-centered">
+            <a href="https://fast3r.ngrok.app/" target="_blank"
+              class="button is-medium is-rounded is-primary">
+              <span class="icon">
+                <img src="https://www.gradio.app/favicon.png" alt="Gradio"
+                  width="16" height="16">
+              </span>
+              <span>Try the Demo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Fast3R Demo Section -->
+
+    <!-- Results Showcase - Placeholder for 3D Viser results -->
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title is-3">Results Showcase</h2>
+          <div class="content has-text-centered">
+            <p class="subtitle">
+              Interactive 3D visualizations of our reconstruction results will
+              be available here soon.
+            </p>
+            <div class="columns is-centered">
+              <div class="column is-8">
+                <div class="box"
+                  style="height: 400px; display: flex; align-items: center; justify-content: center; background-color: #f5f5f5;">
+                  <div style="text-align: center;">
+                    <i class="fas fa-cube"
+                      style="font-size: 64px; color: #aaa; margin-bottom: 20px;"></i>
+                    <h3 class="subtitle">3D Viser visualizations coming
+                      soon</h3>
+                    <p>Check back later to interact with our 3D reconstruction
+                      results</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Results Showcase -->
+
+    <!--BibTex citation -->
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@InProceedings{Yang_2025_Fast3R,
+    title={Fast3R: Towards 3D Reconstruction of 1000+ Images in One Forward Pass},
+    author={Jianing Yang and Alexander Sax and Kevin J. Liang and Mikael Henaff and Hao Tang and Ang Cao and Joyce Chai and Franziska Meier and Matt Feiszli},
+    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month={June},
+    year={2025},
+}</code></pre>
+      </div>
+    </section>
+    <!--End BibTex citation -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+
+              <p>
+                This page was built using the <a
+                  href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                  target="_blank">Academic Project Page Template</a> which was
+                adopted from the <a href="https://nerfies.github.io"
+                  target="_blank">Nerfies</a> project page.
+                You are free to borrow the source code of this website, we just
+                ask that you link back to this page in the footer. <br> This
+                website is licensed under a <a rel="license"
+                  href="http://creativecommons.org/licenses/by-sa/4.0/"
+                  target="_blank">Creative
+                  Commons Attribution-ShareAlike 4.0 International License</a>.
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Hidden analytics -->
+    <div style="display: none;">
+      <script type="text/javascript" id="clustrmaps"
+        src="//clustrmaps.com/map_v2.js?d=-aw1Upj61_uE52ZOEd7_MDVOHGsep0v3h7UuYv2xZuo&cl=ffffff&w=a"></script>
+    </div>
+    <!-- End hidden analytics -->
+
+  </body>
+</html>
