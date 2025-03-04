@@ -222,45 +222,49 @@
     <!-- End paper abstract -->
 
     <!-- Fast3R Demo Section -->
-    <section class="hero is-small is-light">
+    <section class="hero is-small">
       <div class="hero-body">
         <div class="container">
-          <h2 class="title is-3">Fast3R Demo</h2>
-          <div class="content has-text-centered">
-            <p class="subtitle">
-              Our interactive Gradio demo allows you to upload images or videos
-              and visualize the 3D reconstruction in real-time.
-            </p>
-          </div>
-
-          <div class="columns is-centered">
-            <div class="column is-10">
-              <div class="box">
-                <h3 class="subtitle has-text-centered">Upload a video or images
-                  for instant 3D reconstruction</h3>
-                <img src="static/images/fast3r_demo_upload.gif"
-                  alt="Demo GIF: Upload a video" style="width: 100%;" />
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3">Fast3R Demo</h2>
+              <div class="content has-text-centered">
+                <p class="subtitle">
+                  Our interactive Gradio demo allows you to upload images or
+                  videos
+                  and visualize the 3D reconstruction in real-time.
+                </p>
               </div>
             </div>
           </div>
 
-          <div class="columns is-centered">
-            <div class="column is-10">
+          <div class="columns is-centered is-multiline">
+            <!-- First GIF -->
+            <div class="column is-4-desktop is-6-tablet is-12-mobile">
               <div class="box">
-                <h3 class="subtitle has-text-centered">Visualize and interact
-                  with the 3D reconstruction</h3>
+                <h3 class="subtitle has-text-centered is-6">Upload a video or
+                  images</h3>
+                <img src="static/images/fast3r_demo_upload.gif"
+                  alt="Demo GIF: Upload a video" style="width: 100%;" />
+              </div>
+            </div>
+
+            <!-- Second GIF -->
+            <div class="column is-4-desktop is-6-tablet is-12-mobile">
+              <div class="box">
+                <h3 class="subtitle has-text-centered is-6">Visualize 3D
+                  reconstruction</h3>
                 <img src="static/images/fast3r_demo_control.gif"
                   alt="Demo GIF: Visualize the 3D Reconstruction"
                   style="width: 100%;" />
               </div>
             </div>
-          </div>
 
-          <div class="columns is-centered">
-            <div class="column is-10">
+            <!-- Third GIF -->
+            <div class="column is-4-desktop is-6-tablet is-12-mobile">
               <div class="box">
-                <h3 class="subtitle has-text-centered">Visualize confidence
-                  heatmaps, explore frame by frame, and render GIFs</h3>
+                <h3 class="subtitle has-text-centered is-6">Explore confidence
+                  maps</h3>
                 <img src="static/images/fast3r_demo_coloring.gif"
                   alt="Demo GIF: Advanced visualization options"
                   style="width: 100%;" />
@@ -268,7 +272,7 @@
             </div>
           </div>
 
-          <div class="content has-text-centered">
+          <div class="content has-text-centered mt-4">
             <a href="https://fast3r.ngrok.app/" target="_blank"
               class="button is-medium is-rounded is-primary">
               <span class="icon">
