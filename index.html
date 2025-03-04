@@ -231,43 +231,30 @@
               <div class="content has-text-centered">
                 <p class="subtitle">
                   Our interactive Gradio demo allows you to upload images or
-                  videos
-                  and visualize the 3D reconstruction in real-time.
+                  videos and visualize the 3D reconstruction in lightning ⚡️
+                  speed.
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="columns is-centered is-multiline">
-            <!-- First GIF -->
-            <div class="column is-4-desktop is-6-tablet is-12-mobile">
+          <!-- Combined GIF replacing the three separate ones -->
+          <div class="columns is-centered">
+            <div class="column is-10">
               <div class="box">
-                <h3 class="subtitle has-text-centered is-6">Upload a video or
-                  images</h3>
-                <img src="static/images/fast3r_demo_upload.gif"
-                  alt="Demo GIF: Upload a video" style="width: 100%;" />
-              </div>
-            </div>
-
-            <!-- Second GIF -->
-            <div class="column is-4-desktop is-6-tablet is-12-mobile">
-              <div class="box">
-                <h3 class="subtitle has-text-centered is-6">Visualize 3D
-                  reconstruction</h3>
-                <img src="static/images/fast3r_demo_control.gif"
-                  alt="Demo GIF: Visualize the 3D Reconstruction"
-                  style="width: 100%;" />
-              </div>
-            </div>
-
-            <!-- Third GIF -->
-            <div class="column is-4-desktop is-6-tablet is-12-mobile">
-              <div class="box">
-                <h3 class="subtitle has-text-centered is-6">Explore confidence
-                  maps</h3>
-                <img src="static/images/fast3r_demo_coloring.gif"
-                  alt="Demo GIF: Advanced visualization options"
-                  style="width: 100%;" />
+                <video autoplay loop muted playsinline
+                  style="width: 100%; display: block; margin: 0 auto;">
+                  <source src="static/images/fast3r_demo_combined.mp4"
+                    type="video/mp4">
+                  <!-- Fallback to GIF if video isn't supported -->
+                  <img src="static/images/fast3r_demo_combined.gif"
+                    alt="Fast3R Demo Workflow"
+                    style="width: 100%; display: block; margin: 0 auto;">
+                </video>
+                <p class="subtitle has-text-centered mt-3 is-6">
+                  Upload a video or images, visualize 3D reconstruction, and
+                  explore confidence maps to render a GIF
+                </p>
               </div>
             </div>
           </div>
